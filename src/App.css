@@ -1,38 +1,37 @@
-.App {
-  text-align: center;
+.carousel-inner,
+.carousel-item,
+.carousel-item.active {
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.carousel-item:nth-child(1) {
+  background-image: url('/image1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.carousel-item:nth-child(2) {
+  background-image: url('https://mdbootstrap.com/img/Photos/Others/images/77.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.carousel-item:nth-child(3) {
+  background-image: url('https://mdbootstrap.com/img/Photos/Others/images/78.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+/* Height for devices larger than 576px */
+@media (min-width: 992px) {
+  #introCarousel {
+    margin-top: -58.59px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar .nav-link {
+  color: #fff !important;
 }
